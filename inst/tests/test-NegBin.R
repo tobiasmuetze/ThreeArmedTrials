@@ -1,4 +1,3 @@
-library(ThreeArmedTrials)
 
 # Test for non-inferiority test. lambda_P=8, lambda_R = 4, lambda_E = 5, and phi = 1
 # Delta = (lambda_P-lambda_E)/(lambda_P-lambda_R)
@@ -42,34 +41,34 @@ power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 
 power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, n = 1048, power = 0.8012539, type = c('restricted'), allocation = c(2/5, 2/5, 1/5))$sig.level
 power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, n = 1048, power = 0.8012539, type = c('restricted'), allocation = c(2/5, 2/5, 1/5))
 
-# 
+#
 # taNegBin.OptAllocation(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, type = 'unrestricted', n = NULL)
 # taNegBin.OptAllocation(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, type = 'unrestricted', n = 300)
 # taNegBin.OptAllocation(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, type = 'restricted', n = 500, sig.level = 0.025)
-# 
-# 
+#
+#
 taNegBin.OptAllocation(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, type = 'unrestricted', n = 1048, sig.level = 0.025)
 taNegBin.OptAllocation(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, type = 'unrestricted')
 power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, n = 1048, power = 0.8546295, type = c('unrestricted'), allocation = c(488, 391, 169)/1048)$sig.level
-# 
-# 
+#
+#
 #taNegBin.OptAllocation(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, type = 'restricted', n = 500, sig.level = 0.025)
 # power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, n = 500, sig.level = 0.025, type = 'restricted', allocation = c(0.530, 0.324, 0.146))
 
 # # Expect recalculation of 'allocation' and 'n'
 # power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, n = 1001, power = 0.8, allocation = c(0.25, 0.5, 0.25))
-# 
+#
 # # Expect error since n, power, and sig.level are NULL
 # power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, type = c('unrestricted'), allocation = c(1/3, 1/3, 1/3))
-# 
+#
 # # Expect error since power is larger than 1
 # power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, sig.level = 0.025, power = 1.8, type = c('unrestricted'), allocation = c(1/3, 1/3, 1/3))
-# 
+#
 # # Expect error since Delta is not larger than 0
 # power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0, sig.level = 0.025, power = 0.8, type = c('unrestricted'), allocation = c(1/3, 1/3, 1/3))
-# 
+#
 # # Expect error since shape is not larger than 0
 # power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = -0.5, Delta = 0.8, sig.level = 0.025, power = 0.8, type = c('unrestricted'), allocation = c(1/3, 1/3, 1/3))
-# 
+#
 # # Expect error since rateExp is missing
 # power.taNegbin.test(rateRef = 2, ratePla = 4, shape = 0.5, Delta = 0.8, sig.level = 0.025, power = 0.8, type = c('unrestricted'), allocation = c(1/3, 1/3, 1/3))
