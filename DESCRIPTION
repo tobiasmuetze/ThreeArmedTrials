@@ -2,7 +2,7 @@ Package: ThreeArmedTrials
 Type: Package
 Title: Design and Analysis of Clinical Non-Inferiority or Superiority
         Trials with Active and Placebo Control
-Version: 0.2-0
+Version: 0.2-1
 Date: 2015-08-16
 Author: Tobias Muetze
 Maintainer: Tobias Muetze <tobias.muetze@outlook.com>
