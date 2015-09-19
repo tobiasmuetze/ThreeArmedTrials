@@ -100,12 +100,12 @@ return(out)
 #' \eqn{\lambda_E}, \eqn{\lambda_R}, \eqn{\lambda_P} are the expected responses of the experimental treatment (\code{rateExp}), the reference treatment (\code{rateRef}), and the placebo group (\code{ratePla}), respectively.
 #' The margin \emph{Delta}, i.e. \eqn{\Delta} in the formulas above, is between 0 and 1 for testing non-inferiority and larger than 1 for testing superiority.
 #' @param parameterExp A (non-empty) numeric vector of data values coming from the experimental treatment group.
-#' @param distExp A (non-empty) numeric vector of data values coming from the reference treatment group.
-#' @param parameterRef A (non-empty) numeric vector of data values coming from the placebo group.
-#' @param distRef A numeric value specifying the non-inferiority or superiority margin. Is between 0 and 1 in case of non-inferiority and larger than 1 in case of superiority.
+#' @param distExp A character specifying the number generator for the experimental treatment group.
+#' @param parameterRef A (non-empty) numeric vector of data values coming from the referece treatment group.
+#' @param distRef A character specifying the number generator for the reference treatment group.
 #' @param parameterPla A (non-empty) numeric vector of data values coming from the placebo group.
-#' @param distPla A numeric value specifying the non-inferiority or superiority margin. Is between 0 and 1 in case of non-inferiority and larger than 1 in case of superiority.
-#' @param Delta A numeric value specifying the non-inferiority or superiority margin. Is between 0 and 1 in case of non-inferiority and larger than 1 in case of superiority.
+#' @param distPla A character specifying the number generator for the reference placebo group.
+#' @param Delta A positive numeric value specifying the margin.
 #' @param nPermutations Number of permutations for permutation test.
 #' @param nSimulations Number of Monte-Carlo samples used for simulation study.
 #' @param sig.level A numeric value specifying the significance level for the permutation test.

@@ -1,5 +1,12 @@
 \name{NEWS}
 \title{News for Package \pkg{ThreeArmedTrials}}
+\section{Changes in version 0.2-2}{
+\itemize{
+\item Added functions for designing and analyzing three-arm trials with Poisson distributed endpoints.
+\item Added sample size reestimation procedures for three-arm trials with Poisson distributed endpoints.
+\item Poisson-distribution related simulation studies can be found in /inst/simulation-studies/Poisson_*.R
+}
+}
 \section{Changes in version 0.2-1}{
 \itemize{
 \item Added simulation study for permutation test for binary and poisson endpoints to /inst/.

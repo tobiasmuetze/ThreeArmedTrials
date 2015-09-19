@@ -10,21 +10,21 @@ parameterPla, distPla, nSimulations, nPermutations, Delta, sig.level)
 \arguments{
 \item{parameterExp}{A (non-empty) numeric vector of data values coming from the experimental treatment group.}
 
-\item{distExp}{A (non-empty) numeric vector of data values coming from the reference treatment group.}
+\item{distExp}{A character specifying the number generator for the experimental treatment group.}
 
-\item{parameterRef}{A (non-empty) numeric vector of data values coming from the placebo group.}
+\item{parameterRef}{A (non-empty) numeric vector of data values coming from the referece treatment group.}
 
-\item{distRef}{A numeric value specifying the non-inferiority or superiority margin. Is between 0 and 1 in case of non-inferiority and larger than 1 in case of superiority.}
+\item{distRef}{A character specifying the number generator for the reference treatment group.}
 
 \item{parameterPla}{A (non-empty) numeric vector of data values coming from the placebo group.}
 
-\item{distPla}{A numeric value specifying the non-inferiority or superiority margin. Is between 0 and 1 in case of non-inferiority and larger than 1 in case of superiority.}
+\item{distPla}{A character specifying the number generator for the reference placebo group.}
 
 \item{nSimulations}{Number of Monte-Carlo samples used for simulation study.}
 
 \item{nPermutations}{Number of permutations for permutation test.}
 
-\item{Delta}{A numeric value specifying the non-inferiority or superiority margin. Is between 0 and 1 in case of non-inferiority and larger than 1 in case of superiority.}
+\item{Delta}{A positive numeric value specifying the margin.}
 
 \item{sig.level}{A numeric value specifying the significance level for the permutation test.}
 }
