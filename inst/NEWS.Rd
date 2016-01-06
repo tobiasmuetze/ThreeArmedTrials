@@ -1,10 +1,10 @@
 \name{NEWS}
 \title{News for Package \pkg{ThreeArmedTrials}}
-\section{Changes in version 0.2-2}{
+\section{Changes in version 0.3-0}{
 \itemize{
-\item Added functions for designing and analyzing three-arm trials with Poisson distributed endpoints.
-\item Added sample size reestimation procedures for three-arm trials with Poisson distributed endpoints.
-\item Poisson-distribution related simulation studies can be found in /inst/simulation-studies/Poisson_*.R
+\item Renamed permutation test functions.
+\item Added feature in simulate_test_RET_permutation to include competitor in simulation is new.
+\item Added Wald-type test for normally distributed endpoints with heterogeneous variance.
 }
 }
 \section{Changes in version 0.2-1}{
