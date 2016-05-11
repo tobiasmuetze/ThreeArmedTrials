@@ -18,26 +18,7 @@
 #' \item{estimate}{The estimated rates for each of the group as well as the maximum-likelihood estimator for the shape parameter.}
 #' \item{sample.size}{The total number of data points used for the Wald-type test.}
 #' @examples
-#' # Negative binomially distributed endpoints
-#' # Test for non-inferiority test. lambda_P=8, lambda_R = 4, lambda_E = 5, and phi = 1
-#' # Delta = (lambda_P-lambda_E)/(lambda_P-lambda_R)
-#' xExp <-rnbinom(60, mu=5, size=1)
-#' xRef <-rnbinom(40, mu=4, size=1)
-#' xPla <-rnbinom(40, mu=8, size=1)
-#' Delta <- (8-5)/(8-4)
-#' taNegbin.test(xExp, xRef, xPla, Delta, method = 'RML')
-#' taNegbin.test(xExp, xRef, xPla, Delta, method = 'ML')
-#' taNegbin.test(xExp, xRef, xPla, Delta, method = 'SampleVariance')
-#'
-#' # Test for superiority test. lambda_P=8, lambda_R = 5, lambda_E = 4, and phi = 1
-#' # Delta = (lambda_P-lambda_E)/(lambda_P-lambda_R)
-#' xExp <-rnbinom(60, mu=5, size=1)
-#' xRef <-rnbinom(40, mu=4, size=1)
-#' xPla <-rnbinom(40, mu=8, size=1)
-#' Delta <- (8-5)/(8-4)
-#' taNegbin.test(xExp, xRef, xPla, Delta, method = 'RML')
-#' taNegbin.test(xExp, xRef, xPla, Delta, method = 'ML')
-#' taNegbin.test(xExp, xRef, xPla, Delta, method = 'SampleVariance')
+#' # This function is outdated. Please use \code{\link{test_RET}}.
 #' @references Muetze T et al. 2015. \emph{Statistical inference for three-arm trials with negative binomially distributed endpoints.} (Submitted.)
 #' @seealso \code{\link{power.taNegbin.test}}
 #' @export
@@ -45,6 +26,7 @@
 taNegbin.test <- function(xExp, xRef, xPla, Delta, method = c('RML', 'ML', 'SampleVariance')){
 
   # To-Do: Alternative 'smaller'
+  .Deprecated(msg = "Use function \'test_RET\' with argument \'distribution=\"negbin\"\' instead.")
 
   method <- match.arg(method)
   data.name <- paste(c(deparse(substitute(xExp)), ', ', deparse(substitute(xRef)), ', and ', deparse(substitute(xPla)), collapse=''))

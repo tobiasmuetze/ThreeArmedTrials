@@ -46,7 +46,14 @@
 #'  n = 1001, power = 0.8, allocation = c(0.25, 0.5, 0.25))
 #' @export
 #' @keywords power NegativeBinomial
-power.taNegbin.test <- function(rateExp, rateRef, ratePla, shape, Delta, sig.level = NULL, power = NULL, n = NULL, type = c('restricted', 'unrestricted'), allocation = c(1/3, 1/3, 1/3)){
+power.taNegbin.test <- function(rateExp, rateRef,
+                                ratePla, shape,
+                                Delta, sig.level = NULL,
+                                power = NULL, n = NULL,
+                                type = c('restricted', 'unrestricted'),
+                                allocation = c(1/3, 1/3, 1/3)){
+
+  .Deprecated(new = "power_RET", msg = "Use function \'power_RET\' with argument \'distribution=\"negbin\"\' instead.")
 
   if( sum(sapply(list(n, power, sig.level), is.null)) !=  1 )
     stop("Exactly one of 'n', 'power', and 'sig.level' must be NULL.")
@@ -58,7 +65,18 @@ power.taNegbin.test <- function(rateExp, rateRef, ratePla, shape, Delta, sig.lev
   if( missing(shape) ){stop("'shape' is missing.")}
   if( missing(Delta) ){stop("'Delta' is missing.")}
 
-  if( !is.numeric(c(rateExp, rateRef, ratePla, shape)) || any(0 >= rateExp, 0 >= rateRef,  0 >= ratePla, 0 >= shape) ){
+
+  arguments <- names(formals())
+  arguments <- arguments[!(arguments %in%
+                             c("n", "type", "allocation", "sig.level", "power"))]
+  check_missing(args = arguments)
+
+  check_RET_arguments(sig.level = sig.level, power = power,
+                      Delta = Delta, n = n, allocation = allocation)
+
+
+  if( !is.numeric(c(rateExp, rateRef, ratePla, shape)) ||
+      any(0 >= rateExp, 0 >= rateRef,  0 >= ratePla, 0 >= shape) ){
     stop("'rateExp',  'rateRef', 'ratePla', and 'shape' must not be larger than 0.")
   }
 
@@ -66,26 +84,6 @@ power.taNegbin.test <- function(rateExp, rateRef, ratePla, shape, Delta, sig.lev
   effect <- rateExp - Delta * rateRef + (Delta - 1) * ratePla
   if( effect >= 0 ){
     stop('Parameter vector is not located in the alternative.')
-  }
-
-  if( !is.null(sig.level) && !is.numeric(sig.level) || any(0 >= sig.level | sig.level >= 1) ){
-    stop("'sig.level' must be numeric in [0, 1]")
-  }
-
-  if( !is.null(power) && !is.numeric(power) || any(0 >= power | power >= 1) ){
-    stop("'power' must be numeric in [0, 1]")
-  }
-
-  if( !is.null(Delta) && !is.numeric(Delta) || (0 >= Delta) ){
-    stop("'Delta' must be larger than 0.")
-  }
-
-  if( !is.null(n) && !is.numeric(n) || any(6 >= n) ){
-    stop("'n' must be larger than 6.")
-  }
-
-  if( !is.null(allocation) && !is.numeric(allocation) || any(allocation>=1,allocation<=0, sum(allocation)!=1, length(allocation)!=3) ){
-    stop("'allocation' must not have length 3, sum up to 1, and have only entries between 0 and 1.")
   }
 
   # initialize note
