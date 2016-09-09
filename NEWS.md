@@ -1,8 +1,11 @@
 ---
 title: "<center>News for *ThreeArmedTrials*</center>"
 author: "<center>Tobias Mütze</center>"
-date: "<center>September 07th 2016</center>"
+date: "<center>September 09th 2016</center>"
 ---
+
+# ThreeArmedTrials 1.0-2
+* Fixed bug in power calculation of exponential data
 
 # ThreeArmedTrials 1.0-1
 * Fixed bug in input check for power calculation of normal data
