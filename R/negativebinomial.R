@@ -79,15 +79,25 @@ estimate.negbin <- function(x, Delta, ...) {
     n_pla <- x$n_pla
     obs <- c(x$data_exp, x$data_ref, x$data_pla)
 
-    shape_ml <- 1/ .C("newton_Shape",
-                      zufallszahlen=as.integer(obs),
-                      mean1 = as.double(rate_exp),
-                      mean2 = as.double(rate_ref),
-                      mean3 = as.double(rate_pla),
-                      n1 = as.integer(n_exp),
-                      n2 = as.integer(n_ref),
-                      n3 = as.integer(n_pla),
-                      theta_out = as.double(numeric(1)) )$theta_out
+    theta <- c(rate_exp,
+               rate_ref,
+               rate_pla,
+               1)
+    ui <- diag(1, nrow = 4, ncol = 4)
+
+    # Estimate rates restricted to null hypothesis
+    opt_out <- constrOptim(theta = theta,
+                           f = negbin_likelihood,
+                           grad = NULL,
+                           ui = ui,
+                           ci = c(0, 0, 0, 0),
+                           x_exp = x$data_exp,
+                           x_ref = x$data_ref,
+                           x_pla = x$data_pla,
+                           control = list(reltol = 1e-13,
+                                          fnscale = -1))
+    shape_ml <- opt_out$par[4]
+
     var_exp <- rate_exp * (1 + rate_exp * shape_ml)
     var_ref <- rate_ref * (1 + rate_ref * shape_ml)
     var_pla <- rate_pla * (1 + rate_pla * shape_ml)
