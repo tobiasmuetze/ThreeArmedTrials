@@ -71,4 +71,3 @@ power_RET(experiment = 15, reference = 17, placebo = 20,
 \keyword{power}
 \keyword{samplesize}
 \keyword{waldtype}
-

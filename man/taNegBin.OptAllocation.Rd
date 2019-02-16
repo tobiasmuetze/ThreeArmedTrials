@@ -56,4 +56,3 @@ taNegBin.OptAllocation(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta
 }
 \keyword{NegativeBinomial}
 \keyword{optimalSampleSizeAllocation}
-

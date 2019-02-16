@@ -114,4 +114,3 @@ Statistics in Medicine, 35(4):505-521.
 }
 \keyword{test}
 \keyword{waldtype}
-

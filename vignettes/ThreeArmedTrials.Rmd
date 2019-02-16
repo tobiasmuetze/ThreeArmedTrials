@@ -329,5 +329,5 @@ Here, we see that due to the p-value of about 34\%, non-inferiority could not be
 * M. Mielke, A. Munk, and A. Schacht. *The assessment of non‐inferiority in a gold standard design with censored, exponentially distributed endpoints.* Statistics in Medicine 27:5093-5110 (2008).
 * M. Mielke and A. Munk. *The assessment and planning of non-inferiority trials for retention of effect hypotheses-towards a general approach.* arXiv preprint arXiv:0912.4169 (2009).
 * M. Mielke. *Maximum Likelihood Theory for Retention of Effect Non-inferiority Trials*
-* T. Mütze, A. Munk, T. Friede. *Design and analysis of three‐arm trials with negative binomially distributed endpoints*. Statistics in Medicine. 35:505-521 (2016a). 
-* T. Mütze, F. Konietschke, T. Friede. *A studentized permutation test for three-arm trials in the `gold standard' design*. Submitted. (2016b). 
+* T. Mütze, A. Munk, T. Friede. *Design and analysis of three‐arm trials with negative binomially distributed endpoints*. Statistics in Medicine. 35:505-521 (2016). 
+* T. Mütze, F. Konietschke, A. Munk, T. Friede. *A studentized permutation test for three-arm trials in the `gold standard' design*. Statistics in Medicine. 36:883-898 (2017). 

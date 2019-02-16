@@ -4,9 +4,9 @@
 \alias{power.taNegbin.test}
 \title{Power related calcuations for three-armed clinical trials with negative binomial distributed endpoints}
 \usage{
-power.taNegbin.test(rateExp, rateRef, ratePla, shape, Delta, sig.level = NULL,
-  power = NULL, n = NULL, type = c("restricted", "unrestricted"),
-  allocation = c(1/3, 1/3, 1/3))
+power.taNegbin.test(rateExp, rateRef, ratePla, shape, Delta,
+  sig.level = NULL, power = NULL, n = NULL, type = c("restricted",
+  "unrestricted"), allocation = c(1/3, 1/3, 1/3))
 }
 \arguments{
 \item{rateExp}{A numeric value specifying the rate of the experimental treatment group in the alternative hypothesis}
@@ -73,4 +73,3 @@ power.taNegbin.test(rateExp = 2, rateRef = 2, ratePla = 4, shape = 0.5, Delta = 
 }
 \keyword{NegativeBinomial}
 \keyword{power}
-

@@ -48,4 +48,3 @@ Muetze T et al. 2015. \emph{Statistical inference for three-arm trials with nega
 }
 \keyword{NegativeBinomial}
 \keyword{test}
-

@@ -19,4 +19,3 @@ generic function for calcuation the variance
 generic function for calcuation the variance
 }
 \keyword{internal}
-
