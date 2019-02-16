@@ -4,6 +4,12 @@ author: "<center>Tobias Mütze</center>"
 date: "<center>September 09th 2016</center>"
 ---
 
+# ThreeArmedTrials 1.0-3
+* Added references to description
+* Changed method for estimation negative binomial shape parameter
+* Fixed note related to unregistered native routines
+* Functions taNegbin.XYZ were removed 
+
 # ThreeArmedTrials 1.0-2
 * Fixed bug in power calculation of exponential data
 
