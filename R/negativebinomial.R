@@ -1,5 +1,5 @@
 #' @title estimate.negbin
-#' @description Variance calculation for Wald-type test with negative binomial distributed endpointsr p
+#' @description Variance calculation for Wald test with negative binomial distributed endpoints
 #' @importFrom stats constrOptim
 #' @keywords internal
 estimate.negbin <- function(x, Delta, ...) {
