@@ -7,6 +7,6 @@
 \method{estimate}{negbin}(x, Delta, ...)
 }
 \description{
-Variance calculation for Wald-type test with negative binomial distributed endpoints
+Variance calculation for Wald-type test with negative binomial distributed endpointsr p
 }
 \keyword{internal}

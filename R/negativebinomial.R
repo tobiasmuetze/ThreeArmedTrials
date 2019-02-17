@@ -1,5 +1,6 @@
 #' @title estimate.negbin
-#' @description Variance calculation for Wald-type test with negative binomial distributed endpoints
+#' @description Variance calculation for Wald-type test with negative binomial distributed endpointsr p
+#' @importFrom stats constrOptim
 #' @keywords internal
 estimate.negbin <- function(x, Delta, ...) {
 
@@ -117,6 +118,7 @@ estimate.negbin <- function(x, Delta, ...) {
 
 #' @title calc_power_ret.negbin
 #' @description Power related calculations for Wald-type test with Poisson distributed endpoints
+#' @import stats
 #' @keywords internal
 calc_power_ret.negbin <- function(x, Delta, allocation, n = NULL, power = NULL, sig_level = NULL, ...) {
 
