@@ -9,6 +9,7 @@ date: "<center>September 09th 2016</center>"
 * Changed method for estimation negative binomial shape parameter
 * Fixed note related to unregistered native routines
 * Functions taNegbin.XYZ were removed 
+* Fixed typos in vignette
 
 # ThreeArmedTrials 1.0-2
 * Fixed bug in power calculation of exponential data
@@ -26,6 +27,6 @@ date: "<center>September 09th 2016</center>"
 
 # ThreeArmedTrials 0.1-0
 
-* Package includes all functions for plannung and analyzing trials with negative binomial endpoints
+* Package includes all functions for planning and analyzing trials with negative binomial endpoints
 * First version published on CRAN
 
