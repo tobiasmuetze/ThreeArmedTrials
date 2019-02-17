@@ -143,7 +143,7 @@ calc_power_ret.negbin <- function(x, Delta, allocation, n = NULL, power = NULL, 
   shape_ref <- x$para_ref[2]
   shape_pla <- x$para_pla[2]
   shapes <- c(shape_exp, shape_ref, shape_pla)
-  if (any((shapes <= 0) || (shape_exp != shapes))) {
+  if (any((shapes <= 0) | (shape_exp != shapes))) {
     stop("Shape parameters must be positive and identical.")
   }
   shape <- unique(shapes)
