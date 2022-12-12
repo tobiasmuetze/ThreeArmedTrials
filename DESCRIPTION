@@ -2,8 +2,8 @@ Package: ThreeArmedTrials
 Type: Package
 Title: Design and Analysis of Clinical Non-Inferiority or Superiority
     Trials with Active and Placebo Control
-Version: 1.0-4-9000
-Date: 2019-02-17
+Version: 1.0-4
+Date: 2022-12-12
 Authors@R: c(person("Tobias", "Mütze", role=c("aut","cre"),
                     email="tobias.muetze@outlook.com",
                     comment = c(ORCID = "0000-0002-4111-1941")),

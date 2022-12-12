@@ -4,8 +4,14 @@
 \alias{taNegbin.LimitRestMLE}
 \title{taNegbin.LimitRestMLE}
 \usage{
-taNegbin.LimitRestMLE(rateExp1, rateRef1, ratePla1, shape1, Delta,
-  allocation = c(1/3, 1/3, 1/3))
+taNegbin.LimitRestMLE(
+  rateExp1,
+  rateRef1,
+  ratePla1,
+  shape1,
+  Delta,
+  allocation = c(1/3, 1/3, 1/3)
+)
 }
 \arguments{
 \item{rateExp1}{A numeric value specifying the rate of the experimental treatment group in the alternative hypothesis}

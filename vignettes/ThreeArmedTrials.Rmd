@@ -92,7 +92,7 @@ The estimators $\hat{\lambda}_{k}$ are maximum-likelihood estimators for the par
 ## The main functions in *ThreeArmedTrials*
   
 This package is implemented such that the function names for each of the three tasks (optimal sample size allocation calculation, sample size calculation, data analysis) do not depend on the statistical model.
-The model is then specfied when calling the functions.
+The model is then specified when calling the functions.
 The next table lists the task and the corresponding R-function for performing this task.
 
 | Task | R-function | 
@@ -269,7 +269,7 @@ data(seizures)
 knitr::kable(head(seizures), caption = "First six entries of seizures dataset", row.names = TRUE)
 ```
 
-For the `seizures` data set non-inferiority of the experimental treatment compared to the reference will be tested with a non-inferiority margion of $\Delta=0.8$. 
+For the `seizures` data set non-inferiority of the experimental treatment compared to the reference will be tested with a non-inferiority margin of $\Delta=0.8$. 
 The standard deviation for the Wald-type test will be estimated using a maximum-likelihood estimator restricted to the parameter space of the null hypothesis. 
 Thus, we set the parameter `var_estimation = "RML"`. 
 For the unrestricted estimator, `var_estimation = "ML"` can be used. 
