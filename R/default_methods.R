@@ -42,7 +42,8 @@ calc_test_ret.default <- function(x, Delta, data_name, ...) {
   # Rename parameter vector
   names(x$group_response) <- c('Mean Exp', 'Mean Ref', 'Mean Pla')
 
-  if (class(x) != "list") {
+  if (is(x) %in% c("exponential", "negativebinomial", "nonparametric", 
+                   "normal", "poisson")) {
     var_estimation <- list(...)$var_estimation
     if (!is.null(var_estimation)) {
       var_text <- switch(var_estimation,
