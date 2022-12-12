@@ -1,3 +1,0 @@
-language: r
-dist: trusty
-sudo: required
