@@ -21,6 +21,7 @@ Depends:
 Imports:
     stats,
     MASS,
+    methods,
     numDeriv
 Suggests:
     testthat,

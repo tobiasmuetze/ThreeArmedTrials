@@ -7,6 +7,7 @@
 #' @param allocation Sample size allocation
 #' @param h Function used when defining hypothesis
 #' @param h_inv Inverse function to h
+#' @importFrom stats optim
 #' @keywords internal
 limit_RML_binary <- function(pExp1, pRef1, pPla1, Delta, allocation = c(1/3, 1/3, 1/3), h, h_inv){
 
@@ -70,6 +71,7 @@ limit_RML_binary <- function(pExp1, pRef1, pPla1, Delta, allocation = c(1/3, 1/3
 #' @param ratePla1 Experimental treatment group rate in the (assumed) alternative
 #' @param Delta Non-inferiority/Superiority margin
 #' @param allocation Sample size allocation
+#' @importFrom stats optim
 #' @keywords internal
 limit_RML_poisson <- function(rateExp1, rateRef1, ratePla1, Delta, allocation = c(1/3, 1/3, 1/3)){
 
@@ -119,6 +121,7 @@ limit_RML_poisson <- function(rateExp1, rateRef1, ratePla1, Delta, allocation = 
 #' \item{shape0}{The limit of the maximum-likelihood estimator for the shape parameter when estimated restricted to the boundary of the null hypothesis}
 #' \item{sigma2.rest}{The limit of the maximum-likelihood variance estimator for the Wald-type test when restricted to the boundary of the null hypothesis}
 #' @import stats
+#' @importFrom stats optim
 #' @keywords internal
 taNegbin.LimitRestMLE <- function(rateExp1, rateRef1, ratePla1, shape1, Delta, allocation = c(1/3, 1/3, 1/3)){
 
