@@ -1,3 +1,8 @@
+## Resubmission
+This is a resubmission. In this version I have:
+
+* Updated link as requested by changing http to https and by adding trailing slashes
+
 ## Test environments
 * All tests performed through github actions
 * macos-latest, R release

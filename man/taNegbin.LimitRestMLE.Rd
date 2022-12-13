@@ -28,7 +28,7 @@ taNegbin.LimitRestMLE(
 }
 \value{
 A list containing the following components:
-\item{rateExp0, rateRef0, rateRef0}{The limit of the maximum-likelihood estimator for the rates when estimed restricted to the boundary of the null hypothesis}
+\item{rateExp0, rateRef0, rateRef0}{The limit of the maximum-likelihood estimator for the rates when estimated restricted to the boundary of the null hypothesis}
 \item{shape0}{The limit of the maximum-likelihood estimator for the shape parameter when estimated restricted to the boundary of the null hypothesis}
 \item{sigma2.rest}{The limit of the maximum-likelihood variance estimator for the Wald-type test when restricted to the boundary of the null hypothesis}
 }
