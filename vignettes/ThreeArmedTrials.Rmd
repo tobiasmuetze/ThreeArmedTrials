@@ -110,7 +110,7 @@ In this section, we exercise planning and analyzing a three-arm study in the *go
 The example is motivated by clinical trials in patients with depression. 
 We define the binary endpoint *remission* as a HAM-D total score of less than or equal to 7. 
 For more details see 
-<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.2543/">Kieser and Friede (2007)</a>.
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.2543">Kieser and Friede (2007)</a>.
 The parameter of interest $p_k$ is then the probability that remission is achieved. 
 In contrast to the definition of the non-inferiority hypothesis above, larger values of $p_k$ are more desirable. 
 Through the choice of the function $h$, the parameter $p_k$ can be transformed such that larger values of the parameter are more desirable. 
