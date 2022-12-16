@@ -6,7 +6,7 @@ date: "<center>December 12, 2022</center>"
 
 # ThreeArmedTrials 1.0-4
 * Fixed HTML validation problems in estimate.html
-* Update http links to https links
+* Removed links in vignette
 * Minor internal change on handling distribution attribute
 
 # ThreeArmedTrials 1.0-3

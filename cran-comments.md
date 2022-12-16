@@ -1,12 +1,13 @@
 ## Resubmission
 This is a resubmission. In this version I have:
 
-* Updated link as requested 
+* Fixed issues with link as requested 
 
 ## Test environments
 * All tests performed through github actions
 * macos-latest, R release
 * windows-latest, R release
+* windows-latest, R devel
 * ubuntu-latest, devel
 * ubuntu-latest, release
 * ubuntu-latest, oldrel-1

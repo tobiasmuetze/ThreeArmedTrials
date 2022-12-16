@@ -329,7 +329,7 @@ An introduction to planning and analyzing three-arm trials using the package Thr
 Tobias Mütze
 </center></h4>
 <h4 class="date"><center>
-2022-12-13
+2022-12-16
 </center></h4>
 
 
@@ -469,7 +469,7 @@ T=\sqrt{n}\frac{\hat{\lambda}_{E}-\Delta \hat{\lambda}_{R} + (\Delta-1)\hat{\lam
 </div>
 <div id="planning-and-analyzing-a-study-with-the-binary-data" class="section level2">
 <h2>Planning and analyzing a study with the binary data</h2>
-<p>In this section, we exercise planning and analyzing a three-arm study in the <em>gold standard</em> design for binary data. The example is motivated by clinical trials in patients with depression. We define the binary endpoint <em>remission</em> as a HAM-D total score of less than or equal to 7. For more details see <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.2543/">Kieser and Friede (2007)</a>. The parameter of interest <span class="math inline">\(p_k\)</span> is then the probability that remission is achieved. In contrast to the definition of the non-inferiority hypothesis above, larger values of <span class="math inline">\(p_k\)</span> are more desirable. Through the choice of the function <span class="math inline">\(h\)</span>, the parameter <span class="math inline">\(p_k\)</span> can be transformed such that larger values of the parameter are more desirable. From a practical point of view, the appropriate choices for <span class="math inline">\(h\)</span> are the identity function and the logit-function. Considering that the hypothesis above is defined for the case where smaller values are desired, we obtain the functions <span class="math display">\[\begin{align*}
+<p>In this section, we exercise planning and analyzing a three-arm study in the <em>gold standard</em> design for binary data. The example is motivated by clinical trials in patients with depression. We define the binary endpoint <em>remission</em> as a HAM-D total score of less than or equal to 7. For more details see Kieser and Friede (2007). The parameter of interest <span class="math inline">\(p_k\)</span> is then the probability that remission is achieved. In contrast to the definition of the non-inferiority hypothesis above, larger values of <span class="math inline">\(p_k\)</span> are more desirable. Through the choice of the function <span class="math inline">\(h\)</span>, the parameter <span class="math inline">\(p_k\)</span> can be transformed such that larger values of the parameter are more desirable. From a practical point of view, the appropriate choices for <span class="math inline">\(h\)</span> are the identity function and the logit-function. Considering that the hypothesis above is defined for the case where smaller values are desired, we obtain the functions <span class="math display">\[\begin{align*}
   h(x)&amp;=-x,\\
   h(x)&amp;=-\log\left(\frac{x}{1-x}\right).
 \end{align*}\]</span> With <span class="math inline">\(\lambda_k=h(p_k)\)</span>, we obtain the hypotheses <span class="math display">\[\begin{align*}
