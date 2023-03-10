@@ -165,7 +165,7 @@ calc_power_ret.normal <- function(x, Delta, allocation, n = NULL, power = NULL, 
   if (is.null(power)) {
     power <- eval(p.body)
   }  else if (is.null(n)) {
-    n <- uniroot(function(n) eval(p.body) - power, c(ceiling(1/min(w))+3, 1e+07),
+    n <- uniroot(function(n) eval(p.body) - power, c(2*ceiling(1/min(w)), 1e+07),
                  tol = tol, extendInt = "upX")$root
     n_exp <- round(n * w[1])
     n_ref <- round(n * w[2])
