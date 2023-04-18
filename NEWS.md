@@ -1,11 +1,12 @@
 ---
 title: "<center>News for *ThreeArmedTrials*</center>"
 author: "<center>Tobias Mütze</center>"
-date: "<center>March 10, 2023</center>"
+date: "<center>April 18, 2023</center>"
 ---
 
 # ThreeArmedTrials 1.0-5
 * Fixed bug that resulted in error when calculation sample size for normal endpoints with imbalanced sample sizes
+* Fixed error in calc_test_ret.nonparametric
 
 
 # ThreeArmedTrials 1.0-4

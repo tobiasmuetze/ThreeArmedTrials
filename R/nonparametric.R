@@ -55,8 +55,8 @@ calc_test_ret.nonparametric <- function(x, Delta, data_name, ...) {
   sigma2PlaEst <- ( rowSums(xPlaPerm^2) - nPla * xPlaPermMean^2 ) / (nPla - 1)
 
   sigma2_Tperm <- n * (sigma2ExpEst / nExp +
-    Delta^2 * sigma2RefEst / nExp +
-    (1-Delta)^2 * sigma2PlaEst / nExp )
+    Delta^2 * sigma2RefEst / nRef +
+    (1-Delta)^2 * sigma2PlaEst / nPla )
   teststat_perm <- sqrt(n) *
     ( xExpPermMean - Delta * xRefPermMean + (Delta-1) * xPlaPermMean ) /
     sqrt(sigma2_Tperm)
